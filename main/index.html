@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/696cc05d16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./STYLE/style.css">
+    
+</head>
+<body>
+
+    <div class="miApp">
+        <div class="calc" >
+            <div class="display">
+                <div id="valAnt" class="valor anterior">0</div>
+                <div id="valAct" value=0 class="valor actual">0</div>
+                <div id="res" class="valorActual oculto"><br></div>
+            </div>
+            <div class="Botonoes">
+                <!-- numeros -->
+                <div class="numeros">
+                    <button class="btn btn-y" id="c">C</button>
+                    <button class="btn btn-y" id="borra"><i class="fa-solid fa-delete-left"></i></button>
+                    <button class="btn btn-y" id="porcentaje">%</button>
+                    <button class="btn btn-x" id="dividir">/</button>
+    
+                    <button class="btn" id="num7" value=7>7</button>
+                    <button class="btn" id="num8" value=8>8</button>
+                    <button class="btn" id="num9" value=9>9</button>
+                    <button class="btn btn-x" id="multiplicar">X</button>
+    
+                    <button class="btn" id="num4" value=4>4</button>
+                    <button class="btn" id="num5" value=5>5</button>
+                    <button class="btn" id="num6" value=6>6</button>
+                    <button class="btn btn-x" id="restar">-</button>
+    
+                    <button class="btn" id="num1" value=1>1</button>
+                    <button class="btn" id="num2" value=2>2</button>
+                    <button class="btn"  id="num3" value=3>3</button>
+                    <button class="btn btn-x" id="sumar">+</button>
+    
+                    <button class="btn" id="num0" value=0>0</button>
+                    <button class="btn" id="clear">,</button>
+                    <button class="btn btn-xx" id="igual">=</button>
+                </div>            
+            </div>
+        </div>
+
+        <div id="histo" class="historial"> Operaciones
+            <div >
+                <li  id="resHisto" class="resultados"></li>
+            </div>
+        </div>
+
+        <div id="histo" class="historial"> HOLA
+        </div>
+    </div>
+
+    <script src="./JS/botones.js"></script>
+    <script src="./JS/funcionesClick.js"></script>
+    <script src="./JS/functions.js"></script>
+    <script src="./JS/keyValues.js"></script>
+    
+
+</body>
+</html>

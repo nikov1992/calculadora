@@ -1,0 +1,208 @@
+/* PARA FIJAR EL MENU DE HISTORIAL PUSE POSICION DEL PADRE EN REALITVE 
+PARA LUEGO EL HIJO PODER PONERLO EN ABSOLUTO E IR MODIFICANDOLO */
+
+
+
+@font-face {
+    font-family: "numeros";
+    src: url(/main/FONTS/CaviarDreams.ttf);
+}
+
+body {
+    margin: 0 auto;
+    display: grid;
+    font-family: "numeros";
+    height: 1500px;
+    margin: 0;
+    padding: 0;
+    /* background: #8A2387; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to top, #F27121, #E94057, #8A2387); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#F27121, #E94057, #8A2387);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background-size: 2000px; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+
+
+.miApp {
+    display: grid;
+    grid-template-columns: auto 45% 30%;
+    gap: 50px;
+    margin: 50px;
+    margin-left: 150px;
+    justify-content: left;
+    
+}
+
+/* ACA VA A ESTAR ABIERTO */
+.historial {
+    display: grid;
+    height: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+.resultados {
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    /* margin-top: 50px; */
+    /* display: none; */
+}
+
+.resultadosOn {
+    /* margin-top: 50px; */
+    display: block;
+}
+
+.cabecera {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.menu {
+    border: none;
+    background-color: rgba(255, 0, 0, 0);
+    font-size: 30px;
+}
+
+.menuDesplegar {
+    margin: 0 auto;
+    height: 30%;
+    display: flex;
+    align-items: flex-start;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.menuContraer {
+    display: flex;
+    height: 20px;
+    transition: width 0.5s ease, height 0.5s ease;
+    padding: 20px;
+}
+
+.menuDown {
+    font-size: 30px;
+    border: none;
+    background-color: rgba(127, 255, 212, 0);
+    display: none;
+}
+
+.menuUp {
+    font-size: 30px;
+    border: none;
+    background-color: rgba(127, 255, 212, 0);
+}
+
+
+.calc {
+    order: 0;
+    background-color: black;
+    width: 90%;
+    height: 600px;
+    display: grid;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#C {
+    background-color: rgb(213, 206, 206);
+    color: black;
+}
+
+.numeros {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+
+
+
+
+.btn {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(177, 173, 173);
+    color: white;
+    font-size: 25px;
+    font-family: "numeros";
+
+}
+
+.btn:hover {
+    transition: ease 0.5s;
+    background-color: azure;
+    color: grey;
+}
+
+.btn-x {
+    background-color: rgb(240, 159, 66);
+}
+
+.btn-y {
+    background-color: rgb(131, 129, 129);
+}
+
+.btn-x:hover {
+    transition: ease 0.5s;
+    background-color: azure;
+    color: rgb(240, 159, 66);
+}
+
+.btn-xx {
+    background-color: rgb(245, 104, 48);
+}
+
+.presionado {
+    transition: ease 0.5s;
+    background-color: azure;
+    color: rgb(245, 104, 48);
+}
+
+.btn-xx:hover {
+    transition: ease 0.5s;
+    background-color: azure;
+    color: rgb(245, 104, 48);
+}
+
+.display {
+    background-color: black;
+    width: 100%;
+    /* height: auto; */
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: aliceblue;
+    display: grid;
+    justify-items: right;
+    font-size: 50px;
+    gap: 30px;
+    grid-template-rows: auto auto 50px;
+    /* grid-template-columns: 50px auto; */
+}
+
+.dis2 {
+    background-color: red;
+}
+
+.oculto {
+    display: none;
+}
